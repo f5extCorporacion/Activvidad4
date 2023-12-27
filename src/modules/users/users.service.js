@@ -1,5 +1,4 @@
 import User from "./users.model.js";
-
 export class UserService {
   static async findOneByEmail(email) {
     return await User.findOne({

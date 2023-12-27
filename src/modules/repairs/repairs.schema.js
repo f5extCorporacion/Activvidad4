@@ -5,7 +5,7 @@ const repairSchema = z.object({
   date: z.string(),
   motorsNumber: z.string(),
   description: z.string().min(10),
-  user_id: z.number(),
+  userId: z.number().min(1),
 });
 
 export function validateCreateRepair(data) {

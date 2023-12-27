@@ -20,6 +20,7 @@ router.post("/login", login);
 router.route("/").get(protect, findAllUsers).post(createUser);
 router.use(protect);
 router.use("/:id", validExistUser);
+
 /*Rutas con */
 router
   .route("/:id")

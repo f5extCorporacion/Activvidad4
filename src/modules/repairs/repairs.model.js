@@ -20,9 +20,9 @@ const Repair = sequelize.define("repairs", {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  user_id: {
+  userId: {
     type: DataTypes.INTEGER,
-    field: "user_id",
+    field: "userId",
     allowNull: false,
   },
   status: {
